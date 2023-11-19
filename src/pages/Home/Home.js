@@ -11,10 +11,12 @@ const mainFeaturedPost = {
   // linkText: 'Continue reading…',
 };
 const Home=()=>{
-  return <div>
+  return <div>    <ThemeProvider theme={defaultTheme}>
+  <CssBaseline />   <Container maxWidth="lg">
            <Header title="A-Chen Store"  />
            <MainFeaturedPost post={mainFeaturedPost} />
-
+           </Container>
+           </ThemeProvider>
   </div>
 }
 export default Home;
