@@ -68,7 +68,17 @@ export default function Checkout() {
       >
         <Toolbar>
    
-          <butten  href={'/'}>回首頁</butten>
+   
+        <Link
+            color="inherit"
+            noWrap
+            key={'Home 首頁'}
+            variant="body2"
+            href={'/home'}
+            sx={{ p: 1, flexShrink: 0 }}
+          >
+            {'回首頁'}
+          </Link>
         </Toolbar>
       </AppBar>
       <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
@@ -86,12 +96,10 @@ export default function Checkout() {
           {activeStep === steps.length ? (
             <React.Fragment>
               <Typography variant="h5" gutterBottom>
-                Thank you for your order.
+                謝謝您的提問
               </Typography>
               <Typography variant="subtitle1">
-                Your order number is #2001539. We have emailed your order
-                confirmation, and will send you an update when your order has
-                shipped.
+                我們會盡快回覆您
               </Typography>
             </React.Fragment>
           ) : (

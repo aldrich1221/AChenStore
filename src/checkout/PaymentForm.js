@@ -12,17 +12,17 @@ export default function PaymentForm() {
        問題描述
       </Typography>
       <Grid container spacing={3}>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={12}>
           <TextField
             required
             id="cardName"
-            label="Name on card"
+            label="問題"
             fullWidth
             autoComplete="cc-name"
             variant="standard"
           />
         </Grid>
-        <Grid item xs={12} md={6}>
+        {/* <Grid item xs={12} md={6}>
           <TextField
             required
             id="cardNumber"
@@ -52,12 +52,12 @@ export default function PaymentForm() {
             autoComplete="cc-csc"
             variant="standard"
           />
-        </Grid>
+        </Grid> */}
         <Grid item xs={12}>
-          <FormControlLabel
+          {/* <FormControlLabel
             control={<Checkbox color="secondary" name="saveCard" value="yes" />}
             label="Remember credit card details for next time"
-          />
+          /> */}
         </Grid>
       </Grid>
     </React.Fragment>

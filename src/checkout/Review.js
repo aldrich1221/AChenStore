@@ -43,7 +43,7 @@ export default function Review() {
       <Typography variant="h6" gutterBottom>
         檢視問題
       </Typography>
-      <List disablePadding>
+      {/* <List disablePadding>
         {products.map((product) => (
           <ListItem key={product.name} sx={{ py: 1, px: 0 }}>
             <ListItemText primary={product.name} secondary={product.desc} />
@@ -56,20 +56,20 @@ export default function Review() {
             $34.06
           </Typography>
         </ListItem>
-      </List>
+      </List> */}
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
           <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
-            Shipping
+            
           </Typography>
-          <Typography gutterBottom>John Smith</Typography>
-          <Typography gutterBottom>{addresses.join(', ')}</Typography>
+          {/* <Typography gutterBottom>John Smith</Typography>
+          <Typography gutterBottom>{addresses.join(', ')}</Typography> */}
         </Grid>
         <Grid item container direction="column" xs={12} sm={6}>
-          <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
+          {/* <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
             Payment details
-          </Typography>
-          <Grid container>
+          </Typography> */}
+          {/* <Grid container>
             {payments.map((payment) => (
               <React.Fragment key={payment.name}>
                 <Grid item xs={6}>
@@ -80,7 +80,7 @@ export default function Review() {
                 </Grid>
               </React.Fragment>
             ))}
-          </Grid>
+          </Grid> */}
         </Grid>
       </Grid>
     </React.Fragment>
