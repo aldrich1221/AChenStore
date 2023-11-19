@@ -11,8 +11,9 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-    {/* <Route path="/" element={<Blog />}> */}
-      <Route index element={<Blog />} />
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Home />} />
+      <Route path="Blogs" element={<Blog />} />
       <Route path="Products" element={<Products />} />
       {/* <Route path="contact" element={<Contact />} /> */}
       {/* <Route path="*" element={<NoPage />} /> */}

@@ -17,7 +17,7 @@ function Header(props) {
     // { title: 'Politics', url: '#' },
     // { title: 'Opinion', url: '#' },
     // { title: 'Science', url: '#' },
-    { title: 'Home 首頁', url: '/blogs' },
+    { title: 'Home 首頁', url: '/home' },
     { title: 'Product 產品', url: '/products' },
     { title: 'Health Supplement 保健食品資訊', url: "/blogs" },
     { title: '聯絡我們', url: "/contact" },
